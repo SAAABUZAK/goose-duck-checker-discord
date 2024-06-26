@@ -1,1 +1,17 @@
-console.log('hello world!');
+import { Client } from 'discord.js';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const { DISCORD_TOKEN } = process.env;
+
+console.log('token: ', DISCORD_TOKEN);
+
+const client = new Client({
+  intents: ['Guilds', 'GuildMessages'],
+});
+
+client.once('ready', () => {
+  console.log('hello world');
+});
+
+client.login(DISCORD_TOKEN);
