@@ -4,8 +4,6 @@ dotenv.config();
 
 const { DISCORD_TOKEN } = process.env;
 
-console.log('token: ', DISCORD_TOKEN);
-
 const client = new Client({
   intents: ['Guilds', 'GuildMessages'],
 });
