@@ -1,2 +1,1 @@
-# goose-duck-checker-discord
-goose goose duck discord bot
+# 구스구스덕에 진심인편 💘
